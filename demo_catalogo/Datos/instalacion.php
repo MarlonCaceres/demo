@@ -16,5 +16,7 @@
 
 		mysqli_close($cn);
 	}
-	crearBD();
+
+	//crearBD();
+
 ?>

@@ -1,4 +1,45 @@
 header{
 	text-align: center;
-	font-size:30px;
+	font-size:50px;
+	color: #fff;
+	background: #000;
+}
+
+body{
+	background: #000
+	color:#fff;
+}
+
+.formulario{
+	text-align: center;
+	
+}
+
+div{
+	text-align: left;
+	align-content: center;
+}
+
+h1, h3{
+	text-align: center;
+}
+
+.imagenes{
+	width: 180px;
+	height: 180px;
+}
+
+p{
+	text-align: justify;
+	font-style: italic;
+	font-size: 16px;
+}
+
+h3{
+	font-weight: bold;
+	font-style: italic;
+}
+
+.centrar{
+	text-align: center;
 }
