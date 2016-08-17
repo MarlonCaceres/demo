@@ -6,12 +6,13 @@ include_once("conexion.php");
 class productosDatos 
 {
 	
-	function insertarProducto($Detalle,$Tipo_producto,$Precio_producto,$Cantidad,$Imagen)
+	function insertarProducto($nombre,$Detalle,$Tipo_producto,$Precio_producto,$Cantidad,$Imagen)
 	{
 		$con=new conexion();
 		$cn= $con->conectar();
 
 		$productos = new productos();
+		$productos->nombre_producto=$nombre;
 		$productos->Detalle=$Detalle;
 		$productos->Tipo_producto=$Tipo_producto;
 		$productos->Precio_producto=$Precio_producto;
@@ -20,7 +21,8 @@ class productosDatos
 
 		mysqli_select_db($cn,"demo_catalogo");
 
-		$sql= "INSERT INTO productos (Detalle,Tipo_producto,Precio_producto,Cantidad,Imagen) VALUES(
+		$sql= "INSERT INTO productos (nombre_producto,Detalle,Tipo_producto,Precio_producto,Cantidad,Imagen) VALUES(
+		'".$productos->nombre_producto."',
 		'".$productos->Detalle."',
 		'".$productos->Tipo_producto."',
 		'".$productos->Precio_producto."',

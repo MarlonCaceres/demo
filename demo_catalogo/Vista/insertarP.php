@@ -1,7 +1,7 @@
 <?php 
 
 require_once "../Controlador/productosControlador.php";
-
+	$nombre=$_POST['nombre_producto'];
 	$detalle=$_POST['detalle_producto'];
 	$tipo=$_POST['Tipo_producto'];
 	$precio=$_POST['precio_producto'];
@@ -14,7 +14,7 @@ require_once "../Controlador/productosControlador.php";
 	
 	$productosCon = new productosControlador();
 
-	if($productosCon->insertarProducto($detalle,$tipo,$precio,$cantidad,$destino))
+	if($productosCon->insertarProducto($nombre,$detalle,$tipo,$precio,$cantidad,$destino))
 	{
 		echo "Registro Correcto";
 		}else{

@@ -24,13 +24,14 @@ include_once "menu_admin.php"
 				<div class="form-group">
 					<div class="row">
 						<div class="col-md-2 col-xs-2">
-							<label for="exampleInputEmail1">Detalle:</label>
+							<label for="exampleInputEmail1">Nombre:</label>
 						</div>
 						<div class="col-md-3 col-xs-2">
-							<input type="text" name="detalle_producto" placeholder="Zapato Dama talla 26">
+							<input type="text" name="nombre_producto" placeholder="Zapato Dama">
 						</div>
 					</div>
 				</div>
+				
 				<div class="form-group">
 					<div class="row">
 						<div class="col-md-2 col-xs-2">
@@ -75,6 +76,17 @@ include_once "menu_admin.php"
 					</div>				
 				</div>
 				
+				<div class="form-group">
+					<div class="row">
+						<div class="col-md-2 col-xs-2">
+							<label for="exampleInputEmail1">Detalle:</label>
+						</div>
+						<div class="col-md-3 col-xs-2">
+							<textarea rows="5" cols="43" name="detalle_producto" placeholder="Zapato Dama talla 26"></textarea>
+						</div>
+					</div>
+				</div>
+
 				<div class="form-group">
 					<div class="row">
 						<div class="col-md-12 col-xs-12">

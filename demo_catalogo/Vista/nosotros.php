@@ -22,7 +22,7 @@
 				<div class="row">
 					<div class="col-md-8 col-xs-12">
 						<div><h3>S Y S T E L T R O N I K </h3></div>
-						<div><p>Gente emprendedora, soñadora e innovadora a la que le gusta aprender, no le tienen miedo a los retos y aman la tecnología “Le ponemos tecnología a todo . . .”; brindamos soluciones tecnológicas en diferentes industrias del mercado nacional e internacional, contamos con 6 años de experiencia en el mercado y un equipo de innovadores e interdisciplinarios que nos permiten fomentar nuestro firme compromiso por el desarrollo de tecnologías que se adapten a los requerimientos y necesidades de nuestros clientes.</p></div>
+						<div><p class="parrafo">Gente emprendedora, soñadora e innovadora a la que le gusta aprender, no le tienen miedo a los retos y aman la tecnología “Le ponemos tecnología a todo . . .”; brindamos soluciones tecnológicas en diferentes industrias del mercado nacional e internacional, contamos con 6 años de experiencia en el mercado y un equipo de innovadores e interdisciplinarios que nos permiten fomentar nuestro firme compromiso por el desarrollo de tecnologías que se adapten a los requerimientos y necesidades de nuestros clientes.</p></div>
 					</div>
 					<div class="col-md-4 col-xs-12 centrar">
 						<img class="imagenes" src="../images/Empresa/empresa.jpg">
@@ -35,14 +35,14 @@
 					</div>
 					<div class="col-md-8 col-xs-12">
 						<div><h3>M I S I O N</h3></div>
-						<div><p>Investigar, diseñar y desarrollar soluciones tecnológicas que integren tecnología de punta.</p></div>
+						<div><p class="parrafo">Investigar, diseñar y desarrollar soluciones tecnológicas que integren tecnología de punta.</p></div>
 					</div>
 				</div>
 				<hr>
 				<div class="row">
 					<div class="col-md-8 col-xs-12">
 						<div><h3>V I S I O N</h3></div>
-						<div><p>Ser la empresa referente en generar soluciones tecnológicas que se anticipen a las necesidades del mercado nacional e internacional.</p></div>
+						<div><p class="parrafo">Ser la empresa referente en generar soluciones tecnológicas que se anticipen a las necesidades del mercado nacional e internacional.</p></div>
 					</div>
 					<div class="col-md-4 col-xs-12 centrar">
 						<img class="imagenes" src="../images/Empresa/systeltronik_logo.png">

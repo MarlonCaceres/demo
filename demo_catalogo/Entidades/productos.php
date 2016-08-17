@@ -3,6 +3,7 @@
 class productos 
 {
 	public $Id;
+	public $nombre_producto;
 	public $Detalle;
 	public $Tipo_producto;
 	public $Precio_producto;
@@ -18,6 +19,17 @@ class productos
 	function set_id($Id)
 	{
 		$this->Id = $Id;
+	}
+
+	/*ID*/
+	function get_nombre_producto()
+	{
+		return $this->nombre_producto;
+	}
+
+	function set_nombre_producto($nombre_producto)
+	{
+		$this->nombre_producto = $nombre_producto;
 	}
 
 	/*DETALLE*/

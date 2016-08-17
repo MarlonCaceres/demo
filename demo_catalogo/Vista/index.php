@@ -18,24 +18,7 @@
 	?>
 	</div>
 	<div class="productos_todos">
-		<div class="row">
-		<?php
-			while($producto = $productos -> fetch_assoc()){
-		?>
-			<div class="col-md-3 col-xs-6 centrar">
-				<?php echo '<h4>'.$producto['Detalle'].'</h4>';
-					
-					echo '<img class="imagenes" src="'.$producto["Imagen"].'">';
-
-				?>
-				<br>
-				<a href="producto.php? id=<?php echo $producto['Id'];?>">Ver Mas</a>
-				
-			</div>
-		<?php
-			}
-		?>
-		</div>
+		
  	</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

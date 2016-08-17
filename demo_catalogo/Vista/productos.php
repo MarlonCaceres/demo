@@ -1,3 +1,7 @@
+<?php
+	include_once('../Datos/db_utilities.php');
+	$productos = todos();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,9 +14,33 @@
 <body>
 	<header>SYSTELTRONIK</header>
 	<div class="menu">
-	<?php require_once "menu.php"
+	<?php include_once "menu.php"
 	?>
 	</div>
+	<div class="productos_todos">
+		<div class="row">
+		<?php
+			while($producto = $productos -> fetch_assoc()){
+		?>
+			<div class="col-md-3 col-xs-6 ">
+				<div class="centrar">
+				<?php echo '<h4>'.$producto['nombre_producto'].'</h4>';
+					
+					echo '<img class="imagenes" src="'.$producto["Imagen"].'">';
+
+				?>
+				</div>
+				<br>
+				<div class="centrar">
+				<a class="btn btn-success" href="producto.php? id=<?php echo $producto['Id'];?>">Ver Mas</a>
+				</div>
+				<div><br><br></div>
+			</div>
+		<?php
+			}
+		?>
+		</div>
+ 	</div>
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
