@@ -1,6 +1,6 @@
 <?php
-	include_once('../Datos/db_utilities.php');
-	$productos = todos();
+	//include_once('../Datos/db_utilities.php');
+	//$productos = todos();
 ?>
 <!DOCTYPE html>
 <html>

@@ -1,6 +1,6 @@
 <?php
 
-include_once "../Datos/productosDatos.php";
+require_once "../Datos/productosDatos.php";
 
 class productosControlador
 {
@@ -10,5 +10,6 @@ class productosControlador
 		$obj= new productosDatos;
 		return $obj->insertarProducto($nombre,$Detalle,$Tipo_producto,$Precio_producto,$Cantidad,$Imagen);
 	}
+
 }
 ?>

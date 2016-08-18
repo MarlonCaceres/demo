@@ -34,4 +34,13 @@ function ver_Id( $id )
 	return $resultado;
 }
 
+function compra($id,$cantidad)
+{
+	global $conexion;
+	$prod=ver_Id($id);
+	$cant= $prod['Cantidad']-$cantidad;
+	$sql="UPDATE productos SET Cantidad='{$cant}' WHERE Id={$id}";
+	$conexion->query($sql);
+}
  ?>
+

@@ -1,5 +1,5 @@
 <?php
-	include_once('../Datos/db_utilities.php');
+	require_once('../Datos/db_utilities.php');
 	$productos = todos();
 ?>
 <!DOCTYPE html>
@@ -32,7 +32,7 @@
 				</div>
 				<br>
 				<div class="centrar">
-				<a class="btn btn-success" href="producto.php? id=<?php echo $producto['Id'];?>">Ver Mas</a>
+					<a type="submit" class="btn btn-success" href="producto.php? id=<?php echo $producto['Id'];?>">Ver Mas</a>
 				</div>
 				<div><br><br></div>
 			</div>

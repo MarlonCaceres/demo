@@ -1,7 +1,8 @@
 <?php
 
-include_once("../Entidades/productos.php");
-include_once("conexion.php");
+require_once("../Entidades/productos.php");
+require_once("conexion.php");
+require_once('../Datos/db_utilities.php');
 
 class productosDatos 
 {
