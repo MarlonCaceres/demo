@@ -17,6 +17,20 @@ function todos()
 	return $conexion-> query($sql);
 }
 
+function ver_Nombre($nombre)
+{
+	global $conexion, $resultado;
+	$sql= 'SELECT * FROM productos WHERE nombre_producto={$nombre}';
+	return $conexion-> query($sql);
+}
+
+function ver_Tipo($nombre)
+{
+	global $conexion, $resultado;
+	$sql= 'SELECT * FROM productos WHERE Tipo_producto={$nombre}';
+	return $conexion-> query($sql);
+}
+
 function actualizar($id,$detalle,$tipo,$precio,$cantidad,$imagen)
 {
 	global $conexion;

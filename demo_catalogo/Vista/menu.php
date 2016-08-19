@@ -15,6 +15,23 @@
             <li class="centrar"><a href="nosotros.php">Nosotros</a></li>
             <li class="centrar"><a href="productos.php">Productos</a></li>
             <li class="centrar"><a href="noticias.php">Noticias</a></li>
+            <hr>
+            <li class="centrar">
+              <form action="busqueda.php" method="POST" class="formulario" >
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-xs-3"></div>
+                    <div class="centrar col-xs-6">
+                      <input type="text" name="nombre" placeholder="Buscar" class="form-control"/>
+                    </div>
+                    <div class="centrar col-xs-12">
+                    <br>
+                    <input class="btn btn-default" type="submit" value="Buscar"/>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </li>
           </ul>  
         </div>
         <div class="hidden-xs">
@@ -24,6 +41,12 @@
               <li ><a href="nosotros.php">Nosotros</a></li>
               <li><a href="productos.php">Productos</a></li>
               <li><a href="noticias.php">Noticias</a></li>
+              <li class="centrar">
+                <form action="busqueda.php" method="POST" class="navbar-form " >
+                  <input type="text" name="nombre" placeholder="Buscar" class="form-control"/>
+                  <input class="btn btn-default" type="submit" value="Buscar"/>
+                </form>
+              </li>
             </ul>
           </div>
         </div>

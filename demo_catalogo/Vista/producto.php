@@ -1,6 +1,6 @@
 <?php
 	require_once('../Datos/db_utilities.php');
-	$id = isset( $_GET['id'] ) ? $_GET['id'] : '';
+	$id = isset( $_GET['id'] ) ? $_GET['id'] : '');
 	$Producto=ver_Id($id);
 	$nombre=$Producto['nombre_producto'];	
 ?>
@@ -50,23 +50,22 @@
 							</div>
 							<div><p class="detalle col-md-12 col-xs-12"><?php echo '<b>Disponibles: </b> '.$Producto['Cantidad'];?></p>
 							</div>
-							<div class="detalle col-md-12 col-xs-12">
+							<div class="detalle col-md-12 col-xs-12 ">
 								<form action="compraP.php? id=<?php echo $id?> " method="POST" class="formulario">
 									<div class="form-group">
 										<div class="row">
 											<!--div class="col-md-7 col-xs-6"-->
-											<div class="col-md-3 col-xs-6">
+											<div class="col-md-4 col-xs-2">
 												<!--button type="button" class="btn btn-default" aria-label="Left Align">
 												  <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
 												</button-->
-												<input type="text" name="cantidad" placeholder="1" maxlength="3" size="1">
+												<input type="text" name="cantidad" placeholder="1" maxlength="3" size="1"/>
 												<!--button type="button" class="btn btn-default" aria-label="Left Align">
 												  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
 												</button-->
-												
 											</div>
 											<div class="col-md-4 col-xs-6">
-												<input class="btn btn-info" type="submit" value="Comprar"></input>
+												<input class="btn btn-info" type="submit" value="Comprar"/>
 											</div>
 										</div>
 									</div>
