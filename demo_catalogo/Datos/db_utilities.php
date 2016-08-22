@@ -20,14 +20,7 @@ function todos()
 function ver_Nombre($nombre)
 {
 	global $conexion, $resultado;
-	$sql= 'SELECT * FROM productos WHERE nombre_producto={$nombre}';
-	return $conexion-> query($sql);
-}
-
-function ver_Tipo($nombre)
-{
-	global $conexion, $resultado;
-	$sql= 'SELECT * FROM productos WHERE Tipo_producto={$nombre}';
+	$sql = "SELECT * FROM productos WHERE nombre_producto LIKE '%{nombre}%' AND Cantidad>=1";
 	return $conexion-> query($sql);
 }
 
