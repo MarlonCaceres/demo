@@ -12,7 +12,7 @@ if ($conexion->connect_errno)
 
 function todos()
 {
-	global $conexion, $resultado;
+	global $conexion,$resultado;
 	$sql= 'SELECT * FROM productos WHERE Cantidad>=1';
 	return $conexion-> query($sql);
 }
@@ -20,7 +20,7 @@ function todos()
 function ver_Nombre($nombre)
 {
 	global $conexion, $resultado;
-	$sql = "SELECT * FROM productos WHERE nombre_producto LIKE '%{nombre}%' AND Cantidad>=1";
+	$sql = "SELECT * FROM productos WHERE nombre_producto LIKE '%{$nombre}%' AND Cantidad>=1";
 	return $conexion-> query($sql);
 }
 

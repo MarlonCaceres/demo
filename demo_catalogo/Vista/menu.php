@@ -17,7 +17,7 @@
             <li class="centrar"><a href="noticias.php">Noticias</a></li>
             <hr>
             <li class="centrar">
-              <form action="aux_.php" method="POST" class="formulario" >
+              <form action="busqueda.php" method="POST" class="formulario" >
                 <div class="form-group">
                   <div class="row">
                     <div class="col-xs-3"></div>
@@ -42,7 +42,7 @@
               <li><a href="productos.php">Productos</a></li>
               <li><a href="noticias.php">Noticias</a></li>
               <li class="centrar">
-                <form action="aux_.php" method="POST" class="navbar-form " >
+                <form action="busqueda.php" method="POST" class="navbar-form " >
                   <input type="text" name="nombre" placeholder="Buscar" class="form-control"/>
                   <input class="btn btn-default" type="submit" value="Buscar"/>
                 </form>
