@@ -53,8 +53,17 @@ h3{
 	text-align: center;
 }
 .detalle{
-	font-size: 25px;
-	text-align: justify;
+	font-size: 28px;
+	text-align: center;
+	color: #B00000;
+}
+.condetalle{
+	font-size: 24px;
+	text-align: justify;	
+}
+.disponibilidad{
+	font-size: 24px;
+	text-align: center;	
 }
 .bordes{
 	border: solid 1px;

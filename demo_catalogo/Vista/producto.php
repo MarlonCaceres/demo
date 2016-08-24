@@ -23,54 +23,58 @@
 	</div>
 	<div>
 		<div class="row">
-			<div class="col-md-2 col-xs-1"></div>
-			<div class="col-md-8 col-xs-10">
+			<div class="col-md-1 col-xs-1"></div>
+			<div class="col-md-10 col-xs-10">
 				<h2> <?php echo '<h1>'.$Producto['nombre_producto'].'</h1>';?> </h2>
 				<hr>
 			</div>
-			<div class="col-md-2 col-xs-1"></div>
+			<div class="col-md-1 col-xs-1"></div>
 		</div>
 	</div>
 	<div class="contenido">
 		<div class="row">
-			<div class="col-md-2 col-xs-1">	
+			<div class="col-md-1 col-xs-1">	
 			</div>
-			<div class="col-md-8 col-xs-10">
+			<div class="col-md-10 col-xs-10">
 				<div class="row">
 					<div class="col-md-1 col-xs-2"></div>
 					<div class="col-md-5 col-xs-8">
-						<div class="imagen">
-						<?php
-							echo '<img class="imagen" src="'.$Producto["Imagen"].'">';
-							?>
-						</div>
+						<div class="imagen"> <?php echo '<img class="imagen" src="'.$Producto["Imagen"].'">'; ?></div>
 					</div>
 					<div class="col-md-5 col-xs-12">
 						<div class="row">
 							<div><b><p class="precio col-md-12 col-xs-12"><?php echo 'US $'.$Producto['Precio_producto'];?></p></b>
 							</div>
-							<div><p class="detalle col-md-12 col-xs-12"><?php echo '<b>Disponibles: </b> '.$Producto['Cantidad'];?></p>
+							<div><p class="disponibilidad col-md-12 col-xs-12"><?php echo '<b>Disponibles: </b> '.$Producto['Cantidad'];?></p>
 							</div>
 							<div class="detalle col-md-12 col-xs-12 ">
 								<form action="compraP.php? id=<?php echo $id?> " method="POST" class="formulario">
 									<div class="form-group">
 										<div class="row">
-											<!--div class="col-md-7 col-xs-6"-->
-											<div class="col-md-4 col-xs-2">
+											<!--div class="col-md-1 col-xs-2"></div>
+											<div class="col-md-7 col-xs-5"-->
+											<div class="col-md-3 col-xs-2"></div>
+											<div class="col-md-4 col-xs-5">
+											<!--div class="disponibilidad col-md-4 col-xs-2"-->
 												<!--button type="button" class="btn btn-default" aria-label="Left Align">
 												  <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
 												</button-->
-												<input type="text" name="cantidad" placeholder="1" maxlength="3" size="1"/>
+												<input type="text" name="cantidad" placeholder="Ej. 1" maxlength="4" size="1"/>
 												<!--button type="button" class="btn btn-default" aria-label="Left Align">
 												  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
 												</button-->
 											</div>
-											<div class="col-md-4 col-xs-6">
+											<div class="col-md-4 col-xs-5">
 												<input class="btn btn-info" type="submit" value="Comprar"/>
 											</div>
 										</div>
 									</div>
 								</form>
+								<hr>
+							</div>
+							<div class=" col-md-12 col-xs-12">
+								<b><p class="detalle col-md-12 col-xs-12">Detalle</p></b>
+								<p class="condetalle col-md-12 col-xs-12"><?php echo $Producto['Detalle'];?></p>
 							</div>
 						</div>
 					</div>
@@ -78,17 +82,17 @@
 				</div>	
 				<hr>
 			</div>
-			<div class="col-md-2 col-xs-1">	
+			<div class="col-md-1 col-xs-1">	
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-8">
+		<!--div class="row">
+			<div class="col-md-2 col-xs-1"></div>
+			<div class="col-md-8 col-xs-8">
 				<b><p class="detalle col-md-12 col-xs-12">Detalle</p></b>
-				<p class="detalle col-md-12 col-xs-12"><?php echo $Producto['Detalle'];?></p>
+				<p class="condetalle col-md-12 col-xs-12"><?php echo $Producto['Detalle'];?></p>
 			</div>
-			<div class="col-md-2"></div>
-		</div>
+			<div class="col-md-2 col-xs-1"></div>
+		</div-->
 	</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
