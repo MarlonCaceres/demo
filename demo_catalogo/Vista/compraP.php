@@ -5,20 +5,28 @@
 	
 	$cantidad= $_POST['cantidad'];
 	$id = isset( $_GET['id'] ) ? $_GET['id'] : '';
-	$Producto=ver_Id($id);
-	$total=$cantidad*$Producto['Precio_producto'];
-
-	$ventasCon = new ventasControlador();
-	$productosCon=new productosControlador();
 	
-	if($ventasCon->insertarventa($id,$cantidad,$total))
+	if ($cantidad!=0)
+	{
+		$Producto=ver_Id($id);
+		$total=$cantidad*$Producto['Precio_producto'];
+		$ventasCon = new ventasControlador();
+		$productosCon=new productosControlador();
+	
+		if($ventasCon->insertarventa($id,$cantidad,$total))
 		{
 			compra($id,$cantidad);
 			echo "Registro Correcto";
 			echo 'Gracias Por Realizar su Compra. <br>Usted a comprado '.$cantidad.' '.$nombre=$Producto['nombre_producto'].' con un costo de '.$Producto['Precio_producto']. '. <br> Su total a pagar es: ' .$total.' <br>Espere un momento sera redireccionado.';
 		}else{
 			echo "false";
-		}
+		}	
+	}
+	else{
+		header("Location:producto.php? id=$id");
+	}
+	
+	
  ?>
 <!DOCTYPE html>
 <html>

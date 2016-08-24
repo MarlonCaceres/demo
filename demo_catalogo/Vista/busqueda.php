@@ -5,7 +5,7 @@
 	if (empty($name=$_POST['nombre']))
 	{
 		header("Location:productos.php");
-		echo 'debe llenar el campo para buscar';
+		echo 'Debe llenar el campo para buscar';
 	}else{
 		if($productos=ver_Nombre($name))
 			{
