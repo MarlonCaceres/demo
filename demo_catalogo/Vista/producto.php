@@ -3,7 +3,7 @@
 	$id = isset( $_GET['id'] ) ? $_GET['id'] : '';
 	$Producto=ver_Id($id);
 	$nombre=$Producto['nombre_producto'];
-	
+
 ?>
 <!DOCTYPE html>
 <html>

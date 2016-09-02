@@ -10,6 +10,5 @@ class productosControlador
 		$obj= new productosDatos;
 		return $obj->insertarProducto($nombre,$Detalle,$Tipo_producto,$Precio_producto,$Cantidad,$Imagen);
 	}
-
 }
 ?>

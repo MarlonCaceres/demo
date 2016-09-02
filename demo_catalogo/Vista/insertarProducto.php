@@ -1,7 +1,6 @@
 <?php 
-
 require_once "../Datos/productosDatos.php";
-
+	$error=isset($_GET['id'])?$_GET['id']:'';
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,6 +18,21 @@ include_once "menu_admin.php"
 		<div class="col-md-4 col-xs-10" id="formulario">
 			<div class="row">
 			<h1>Ingreso de Productos</h1>
+			<div class="centrar">
+				<?php
+				switch ($error) {
+					case '1':
+						echo "<h4 class='alert alert-danger'>Debe llenar todos los campos.</h4>";
+						break;
+					case '2':
+						echo "<h4 class='alert alert-danger'>El precio debe ser un valor númerico o debe llevar punto (.) como separador de decimales.</h4>";
+						break;
+					case '3':
+						echo "<h4 class='alert alert-danger'>La cantidad debe ser un valor númerico.</h4>";
+						break;
+				}
+				?>
+			</div>
 			<br>
 			<form action="insertarP.php" method="POST" enctype="multipart/form-data">
 				<div class="form-group">

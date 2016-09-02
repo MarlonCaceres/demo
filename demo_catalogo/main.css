@@ -68,3 +68,6 @@ h3{
 .bordes{
 	border: solid 1px;
 }
+.error{
+	color:#f85032;
+}
